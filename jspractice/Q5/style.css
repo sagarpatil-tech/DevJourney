@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html , body{
+height: 100%;
+width: 100%;
+}
+#download{
+    height: 12px;
+    width: 190px;
+    background-color: #dadada;
+    border-radius: 20px;
+}
+
+#progress{
+    transition: all cubic-bezier(0.19, 1, 0.22, .2);
+    background-color: green;
+    color: green;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+}
+#center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+h3{
+    font-size: 12px;
+    opacity: 0;
+}
