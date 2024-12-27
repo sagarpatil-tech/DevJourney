@@ -36,8 +36,53 @@ function gsapAnimation(){
             scrub:2
         }
     })
+    
 }
 
+function h1None(){
+    gsap.to("#page1 #name h1",{
+        display:"none"
+    })
+}
 
+function gsapAnimation1(){
+gsap.to("#page1 img",{
+    width:"100%",
+    scrollTrigger:{
+        trigger:"#page1",
+        scroller:"body",
+        markers:true,
+        start:"top 0",
+        end:"end -100%",
+        scrub:2,
+        pin:true
+    }
+    
+
+})
+}
+function gsapAnimation2(){
+var tl = gsap.timeline()
+tl.from("#name h1", {
+    y: -100,
+    opacity:0,
+    delay:1,
+scrollTrigger:{
+    trigger:"#name h1",
+    scroller:"body",
+    markers:true,
+    start:"top top",
+    end:"bottom -100%",
+    scrub:3,
+    pin:true
+}
+})}
+
+
+
+gsapAnimation1()
+gsapAnimation2()
 textSplitting()
 gsapAnimation()
+
+
